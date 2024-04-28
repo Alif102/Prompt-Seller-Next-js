@@ -1,13 +1,13 @@
 "use client";
-import Ratings from "@/utils/Ratings";
-import { styles } from "@/utils/styles";
+import Ratings from "../../../utils/Ratings";
+import { styles } from "../../../utils/styles";
 import { Button, Chip } from "@nextui-org/react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import { IoCloseOutline } from "react-icons/io5";
 import { Elements } from "@stripe/react-stripe-js";
-import CheckoutForm from "./CheckoutForm";
+ import CheckoutForm from "./CheckoutForm";
 
 const PromptDetailsCard = ({
   promptData,

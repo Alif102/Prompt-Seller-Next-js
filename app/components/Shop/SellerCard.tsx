@@ -1,5 +1,5 @@
 import Ratings from "@/utils/Ratings";
-import { styles } from "@/utils/styles";
+import { styles } from "@/app/utils/styles";
 import { Avatar, Card, Skeleton } from "@nextui-org/react";
 import React from "react";
 

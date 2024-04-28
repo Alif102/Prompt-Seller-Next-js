@@ -14,7 +14,7 @@ import { styles } from "../app/utils/styles";
 type Props = {
   // user: User | undefined;
   // isSellerExist: boolean | undefined;
-  user: User | undefined;
+  user: User | null;
   isSellerExist: boolean | undefined;
 }
 

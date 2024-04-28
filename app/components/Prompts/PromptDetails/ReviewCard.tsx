@@ -1,5 +1,5 @@
-import Ratings from "@/utils/Ratings";
-import { styles } from "@/utils/styles";
+import Ratings from "../../../utils/Ratings";
+import { styles } from "../../../utils/styles";
 import { Avatar } from "@nextui-org/react";
 import { format } from "timeago.js";
 

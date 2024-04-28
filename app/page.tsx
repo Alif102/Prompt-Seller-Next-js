@@ -2,14 +2,17 @@
 import React, { useEffect, useState } from 'react'
 import Header from './components/Layout/Header'
 // import Hero from './components/Layout/Homepage/Hero'
-import About from './components/Layout/Homepage/About'
+// import About from './components/Layout/Homepage/About'
 import Image from 'next/image'
- import { User } from '@clerk/nextjs/server'
+//  import { User } from '@clerk/nextjs/server'
 import axios from 'axios'
+import { Divider } from "@nextui-org/react"
 import { styles } from "../app/utils/styles";
 import Loader from './utils/Loader/Loader'
 import PromptCardLoader from './utils/PromptCardLoader'
 import PromptCard from './components/Prompts/PromptCard'
+import Future from './components/Layout/Future'
+import Footer from './components/Layout/Footer'
 
 type Props = {
   // user: User | undefined;
@@ -90,32 +93,29 @@ const Page = ({}: Props) => {
         />
         <br />
         <div className="w-[95%] md:w-[90%] xl:w-[80%] 2xl:w-[75%] m-auto">
-           <About /> 
+           {/* <About />  */}
 
            <div>
             <h1 className={`${styles.heading} p-2 font-Monserrat`}>
               Latest Prompts
             </h1>
             <div className="w-full flex flex-wrap mt-5">
-              {loading ? (
-                [...new Array(8)].map((i) => (
-                  <>
-                    <PromptCardLoader />
-                  </>
-                ))
-              ) : (
-                <>
+              
                   {prompts &&
                     prompts.map((item: any) => (
                       <PromptCard prompt={item} key={item.id} />
                     ))}
-                </>
-              )}
+                
             </div>
-            <br />
+           
+          </div>
+          <br />
+            <Future/>
             
             <br />
-          </div>
+            <br/>
+            <Divider className="bg-[#ffffff23]" />
+            <Footer/>
      
 
     </div>

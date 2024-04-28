@@ -1,6 +1,6 @@
 import { newOrder } from "@/actions/orders/createOrder";
 import { getUser } from "@/actions/user/getUser";
-import { styles } from "@/utils/styles";
+import { styles } from "../../../utils/styles";
 import {
   LinkAuthenticationElement,
   PaymentElement,

@@ -1,5 +1,5 @@
 "use client";
-import { styles } from "@/utils/styles";
+import { styles } from "../../../utils/styles";
 import { Avatar, Divider, Tab, Tabs } from "@nextui-org/react";
 import React from "react";
 import ReviewCard from "./ReviewCard";

@@ -1,15 +1,15 @@
 "use client";
-import Footer from "@/components/Layout/Footer";
-import Header from "@/components/Layout/Header";
-import ShopBanner from "@/components/Shop/ShopBanner";
+import Footer from "../../components/Layout/Footer";
+import Header from "../../components/Layout/Header";
+import ShopBanner from "../../components/Shop/ShopBanner";
 import { User } from "@clerk/nextjs/server";
 import { Divider } from "@nextui-org/react";
 import { useEffect, useState } from "react";
-import PromptDetails from "@/components/Prompts/PromptDetails/PromptDetails";
-import { stripePaymentIntent } from "@/actions/payment/paymentAction";
+import PromptDetails from "../../components/Prompts/PromptDetails/PromptDetails";
+import { stripePaymentIntent } from "../../../actions/payment/PaymentAction";
 import { loadStripe } from "@stripe/stripe-js";
 import { propmt } from "@/@types/promptTypes";
-import Loader from "@/utils/Loader";
+import Loader from "../../utils/Loader/Loader";
 
 const PromptDetailsPage = ({
   user,
@@ -17,7 +17,7 @@ const PromptDetailsPage = ({
   publishAbleKey,
   promptId,
 }: {
-  user: User | undefined;
+  user: User | null;
   isSellerExist: boolean;
   publishAbleKey: string;
   promptId: string;
@@ -27,6 +27,9 @@ const PromptDetailsPage = ({
   const [clientSecret, setClientSecret] = useState("");
   const [prompt, setPrompt] = useState<propmt>();
   const [loading, setLoading] = useState(true);
+  
+
+  
 
   const fetchPromptData = async () => {
     setLoading(true);

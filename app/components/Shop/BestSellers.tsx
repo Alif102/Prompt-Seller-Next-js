@@ -1,4 +1,4 @@
-import { styles } from "@/utils/styles";
+import { styles } from "@/app/utils/styles";
 import React, { useEffect, useState } from "react";
 import SellerCard from "./SellerCard";
 

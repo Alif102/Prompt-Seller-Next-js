@@ -1,4 +1,4 @@
-import { styles } from "@/utils/styles";
+import { styles } from "@/app/utils/styles";
 import Image from "next/image";
 import React from "react";
 
