@@ -46,7 +46,7 @@ const Footer = (props: Props) => {
         </div>
       </div>
       <p className={`${styles.paragraph} text-center`}>
-        Copyright © 2023 Becodemy . All Rights Reserved
+        Copyright © 2024 Prompt AI . All Rights Reserved Alif Ahmed nextjs
       </p>
       <br />
       <br />
